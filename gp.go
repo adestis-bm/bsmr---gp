@@ -10,10 +10,10 @@ import (
 )
 
 var (
-	//go:embed resources/code.go.template
+	//go:embed resources/code_template.go
 	codeTemplate string
 
-	//go:embed resources/test.go.template
+	//go:embed resources/test_template.go
 	testTemplate string
 )
 
