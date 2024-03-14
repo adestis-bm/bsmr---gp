@@ -27,15 +27,17 @@ import (
 var debug bool
 
 func main() {
-	var namePack string
-	var nameFile string
-	var namePath string
-	var enableTop bool
-	var enableCmd bool
-	var enableTst bool
-	var enableTyp bool
-	var useForce bool
-	var onlyVersion bool
+	var (
+		namePack    string
+		nameFile    string
+		namePath    string
+		enableTop   bool
+		enableCmd   bool
+		enableTst   bool
+		enableTyp   bool
+		useForce    bool
+		onlyVersion bool
+	)
 
 	flag.StringVar(&namePack, "name", "", "package name")
 	flag.StringVar(&nameFile, "file", "", "filename to use")
